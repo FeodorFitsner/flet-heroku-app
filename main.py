@@ -1,3 +1,5 @@
+import os
+
 import flet
 from flet import ElevatedButton, Image, Page
 
@@ -19,4 +21,4 @@ def main(page: Page):
     )
 
 
-flet.app(target=main, port=5000)
+flet.app(target=main, port=os.getenv("PORT"))
